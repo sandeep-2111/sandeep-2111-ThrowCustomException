@@ -5,11 +5,12 @@ public class Application {
      * All implementation code should be written in the Lab class.
      *
      * The Lab.mustThrow method should throw the CustomException class.
+     * @throws Exception 
      */
-    public static void main(String[] args) throws CustomException{
+    public static void main(String[] args) throws Exception{
         Lab thrower = new Lab();
         System.out.println("The lab code should throw a CustomException, causing a stack trace to be printed to console here:");
-        //thrower.throwCustomException();
+        thrower.throwCustomException();
         System.out.println("\nIf this line was printed to console, then throwing an exception was unsuccessful.");
     }
 }
